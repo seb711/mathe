@@ -2,24 +2,12 @@
 
 import React from "react";
 import styles from "./page.module.css";
+import Chat from "./components/chat";
 
 const Home = () => {
-  const categories = {
-    "Let's GOGO": "basic-chat"
-  };
-
   return (
     <main className={styles.main}>
-      <div className={styles.title}>
-        Starty Marty Super Mathe Nachhilfeapp, dass es sogar Leona versteht
-      </div>
-      <div className={styles.container}>
-        {Object.entries(categories).map(([name, url]) => (
-          <a key={name} className={styles.category} href={`/examples/${url}`}>
-            {name}
-          </a>
-        ))}
-      </div>
+      <Chat />
     </main>
   );
 };
