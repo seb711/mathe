@@ -33,5 +33,7 @@ jobs:
           action: "upload"
           app_location: "/" # Location of your Next.js app (root)
           output_location: "out" # Location of the static files (out directory)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
 
