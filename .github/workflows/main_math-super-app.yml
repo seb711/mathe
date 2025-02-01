@@ -55,4 +55,4 @@ jobs:
           app-name: 'math-super-app'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_322A1174ADDA429FB82BA5E7FCD2520C }}
-          package: .
+          package: ./out
