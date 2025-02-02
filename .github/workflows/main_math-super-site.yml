@@ -26,8 +26,6 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-          mv ./build/static ./build/standalone/build
-          mv ./public ./build/standalone
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -55,4 +53,4 @@ jobs:
           app-name: 'math-super-site'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5AA38463F6364ECEA73A1905BE32BD2A }}
-          package: ./build/standalone
+          package: .
